@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root{
+    --bluish-color: #0891B2;
+    --grayish-color: #5c5b5b;
+    --play-fair: "Playfair Display";
+    --roboto: "Roboto";
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0%;
+    height: 100vh;
+    background-color: white; /* Default background color */
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    border: none;
+    background-color: white;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.corner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Width of the colored corner */
+    height: 400px; /* Height of the colored corner */
+    background-color: var(--bluish-color); /* Corner background color */
+    clip-path: polygon(0 0, 140% 0, 0 100%);
+    z-index: -1;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+    margin: 20px;
+    
+}
+
+.header-image-container{
+    position: relative;
+    
+
+}
+
+.header-image{
+    max-width: 250px;
+    height: auto;
+}
+
+.name-container{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: left;
+    color: white;
+    font-family: var(--play-fair);
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.about-me-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me{
+    font-family: var(--play-fair);
+    align-self: center;
+    font-weight: normal;
+}
+
+.about-me-para{
+    align-self: center;
+    font-family: var(--roboto);
+    color: var(--grayish-color);
+}
+
+div > svg{
+    width: 24px;
+    height: 24px;
+}
+
+.header-icons-container{
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    margin: 20px;
+    margin-top: 50px;
+}
+
+.my-work-title{
+    font-family: var(--play-fair);
+    font-weight: normal;
+    text-align: center;
+}
+
+.works-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 50px;
+}
+
+.work-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr 4fr;
+    box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2), /* bottom shadow */
+                5px 0px 5px -3px rgba(0,0,0,0.2), /* right shadow */
+                -5px 0px 5px -3px rgba(0,0,0,0.2); /* left shadow */
+}
+
+.work-image{
+    width: 100%;
+    
+}
+
+.project-info-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+.project-name-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.project-name{
+    font-family: var(--play-fair);
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.works-icons{
+    width: 18px;
+    height: 18px;
+}
+
+.project-explanation{
+   font-family: var(--roboto);
+   font-size: 14px; 
+   color: var(--grayish-color);
+   max-width: 80%;
+   word-wrap: break-word;
+   padding-left: 8px;
+   padding-bottom: 3px;
+}
+
+footer{
+    background-color: var(--bluish-color);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 50px;
+}
+
+.footer-icons-container{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-icons{
+    width: 28px;
+    height: 28px;
+    background-color: var(--bluish-color);
+}
+
+.footer-buttons{
+    background-color: var(--bluish-color);
+}
+
+.footer-image{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-me-title{
+    font-family: var(--play-fair);
+    font-weight: normal;
+    text-align: center;
+}
+
+.contact-me-explanation{
+    font-family: var(--roboto);
+    padding: 10px;
+}
+
+.address-container{
+    font-family: var(--roboto);
+    padding: 10px;
+}
+
+.gmail-number-container{
+    font-family: var(--roboto);
+    padding: 10px;
+}
