@@ -170,12 +170,29 @@ main{
    padding-bottom: 3px;
 }
 
+footer *{
+    margin: 0;
+}
+
 footer{
     background-color: var(--bluish-color);
     display: flex;
     flex-direction: column;
     color: white;
     gap: 50px;
+    padding-top: 20px;
+}
+
+.footer-first-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-me-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .footer-icons-container{
@@ -209,15 +226,24 @@ footer{
 
 .contact-me-explanation{
     font-family: var(--roboto);
-    padding: 10px;
+    padding-left: 10px;
 }
 
 .address-container{
     font-family: var(--roboto);
     padding: 10px;
+    font-size: 14px;
 }
 
 .gmail-number-container{
     font-family: var(--roboto);
     padding: 10px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.gmail-para{
+    padding-left: 5px;
 }
