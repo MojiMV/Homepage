@@ -376,6 +376,41 @@ footer{
         padding-left: 5%;
     }
 
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        place-items: center;
+    
+    }
+
+    .footer-first-container{
+        padding-bottom: 50px;
+        padding: 20px;
+        padding-left: 10%;
+    }
+
+    .footer-first-container *{
+        padding: 0%;
+    }
+
+    .contact-me-title{
+        text-align: left;
+    }
+
+    .footer-image-container{
+        padding: 20px;
+    }
+
+    .footer-image{
+        width: 300px;
+    }
+
+    .footer-icons-container{
+        display: flex;
+        gap: 5px;
+        justify-content: left;
+    }
     
 }
 
