@@ -101,6 +101,14 @@ a > svg{
     justify-content: center;
 }
 
+.header-icons-container > button{
+    transition: transform 0.3s ease-out;
+} 
+
+.header-icons-container > button:hover{
+    transform: scale(1.1);
+}
+
 main{
     display: grid;
     grid-template-columns: 1fr;
@@ -124,12 +132,18 @@ main{
 }
 
 .work-container{
+    will-change: transform;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 5fr 4fr;
     box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2), /* bottom shadow */
                 5px 0px 5px -3px rgba(0,0,0,0.2), /* right shadow */
                 -5px 0px 5px -3px rgba(0,0,0,0.2); /* left shadow */
+    transition: transform 0.4s ease-out;
+}
+
+.work-container:hover{
+    transform: scale(1.1);
 }
 
 .work-image{
@@ -162,6 +176,14 @@ main{
 
 .work-icons-container{
     display: flex;
+}
+
+.work-icons-container > button{
+    transition: transform 0.3s ease-out;
+}
+
+.work-icons-container > button:hover{
+    transform: scale(1.1);
 }
 
 .works-icons{
@@ -227,6 +249,11 @@ footer{
 
 .footer-buttons{
     background-color: var(--bluish-color);
+    transition: transform 0.3s ease-out;
+}
+
+.footer-buttons:hover{
+    transform: scale(1.1);
 }
 
 .footer-image{
