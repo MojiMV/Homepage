@@ -91,7 +91,7 @@ header{
     color: var(--grayish-color);
 }
 
-div > svg{
+a > svg{
     width: 24px;
     height: 24px;
 }
