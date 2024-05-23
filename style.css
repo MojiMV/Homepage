@@ -102,6 +102,7 @@ a > svg{
 }
 
 .header-icons-container > button{
+    will-change: transform;
     transition: transform 0.3s ease-out;
 } 
 
